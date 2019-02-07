@@ -8,7 +8,7 @@ const Footer = (props) => {
   const saveSuccessful: boolean = useStore(state => state.search.saveSuccessful)
 
   return (
-    <div>test</div>
+    <div>testtest</div>
   )
 }
 
