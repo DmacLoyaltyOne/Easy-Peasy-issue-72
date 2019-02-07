@@ -1,0 +1,7 @@
+{
+  "h1": "FR A simple example",
+  "change-locale": "FR Change locale",
+  "to-second-page": "FR To second page",
+  "error-with-status": "FR A {{statusCode}} error occurred on server",
+  "error-without-status": "FR An error occurred on the server"
+}

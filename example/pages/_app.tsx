@@ -1,13 +1,26 @@
 import React from 'react'
 import App, { Container } from 'next/app'
+import {
+  StoreProvider,
+  createStore,
+  useStore,
+  useAction,
+  select
+} from 'easy-peasy'
+
+import store from '../models/createStore'
+// @ts-ignore
 import { appWithTranslation } from '../i18n'
 
 class MyApp extends App {
-  render () {
+  public render() {
     const { Component, pageProps } = this.props
+
     return (
       <Container>
-        <Component {...pageProps} />
+        <StoreProvider store={store}>
+          <Component {...pageProps} />
+        </StoreProvider>
       </Container>
     )
   }
